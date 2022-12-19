@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= current_page.data.title %> | <%= config[:sitename] %></title>
+    <meta name="description" content="<%= current_page.data.description %>" />
+
+    <meta property="og:title" content="<%= current_page.data.title %> | <%= config[:sitename] %>">
+    <meta property="og:description" content="<%= current_page.data.description %>" />
+    <meta property="og:url" content="<%= config[:host] %>">
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:site_name" content="<%= config[:sitename] %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://xyz.domain.com/og-share/global-en.jpg" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="/images/icons/apple-touch-icon-180-precomposed.png">
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body class="text-white bg-red-800">
+    <%= yield %>
+  </body>
+</html>

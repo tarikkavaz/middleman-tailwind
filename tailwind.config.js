@@ -4,7 +4,12 @@ module.exports = {
     "./source/**/*.{html,erb}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'extraorange': '#ff9900',
+        'extrablue': '#1C4BE6',
+      },
+    },
   },
   plugins: [],
 }

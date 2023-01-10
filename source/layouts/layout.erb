@@ -17,10 +17,11 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="180x180" href="/images/icons/apple-touch-icon-180-precomposed.png">
-    <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "tailwind" %>
+    <%= stylesheet_link_tag "extra" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body class="text-white bg-red-800">
+  <body>
     <%= yield %>
   </body>
 </html>
